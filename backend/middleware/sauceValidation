@@ -1,0 +1,52 @@
+const validate = require('mongoose-validator');
+
+exports.nameValidator = [
+    validate({
+        validator: 'isLength',
+        arguments: [3, 60],
+        message: 'Le nom de votre sauce doit contenir entre 3 et 60 caractères',
+    }), 
+    validate({
+        validator: 'matches',
+        arguments: /^[a-z\d\-_\s]+$/i, /*Regex*/ 
+        message: "Veillez à utiliser uniquement des lettres et des chiffres pour vos sauces",
+      }),
+];
+
+exports.manufacturerValidator = [
+    validate({
+        validator: 'isLength',
+        arguments: [3, 40],
+        message: 'Le nom du createur doit etre compris entre 3 et 40 caractères',
+    }), 
+    validate({
+        validator: 'matches',
+        arguments: /^[a-z\d\-_\s]+$/i, /*Regex*/ 
+        message: "Veillez à utiliser uniquement des lettres et des chiffres pour le createur",
+      }),
+];
+
+exports.descriptionValidator = [
+    validate({
+        validator: 'isLength',
+        arguments: [10, 150],
+        message: 'La description de la sauce doit être entre 10 et 150 caractères',
+    }), 
+    validate({
+        validator: 'matches',
+        arguments: /^[a-z\d\-_\s]+$/i, /*Regex*/ 
+        message: "Veillez à utiliser uniquement des lettres et des chiffres pour la description de la sauce",
+      }),
+];
+
+exports.pepperValidator = [
+    validate({
+        validator: 'isLength',
+        arguments: [3, 20],
+        message: 'L ingredient principal de la sauce doit être entre 3 et 20 caractères',
+    }), 
+    validate({
+        validator: 'isAlphanumeric', 
+        message: "Merci d utiliser uniquement des caractères alphanumériques entre 3 et 20 caractères",
+      }),
+];
