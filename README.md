@@ -14,19 +14,28 @@ All sauce routes for sauces have an authorization (the token is sent by the fron
 - User journey
 - User controller
   
-### Step 2 The user is able to perform the following operations ###
+### The user is able to perform the following operations ###
 - Create an account 
 - Connect and have a valid token
+  
+### Step 2 Start the middleware ###
+- Added multer for images
+- Added authorize for token validation
+- Authorize was added before starting to build the course for the sauces because authentication is necessary for a user to perform an action on the course of sauces.
   
 ### Step 3 For the route API sauce ###
 - The Sauce Model
 - The Sauce Route
 - The Sauce Controller
-  
-### Step 4 The user is able to perform the following operations ###
+- Authorizes all functions using Authorize middleware
+- On the Devtools network tab for more information
+
+### The user is able to perform the following operations ###
 - Add new sauce
 - Delete a sauce
 - See all sauces
+- The user can like or dislike a sauce (or
+none)
 
 # Security requirements 
 
