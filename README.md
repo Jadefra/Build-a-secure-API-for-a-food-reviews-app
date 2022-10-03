@@ -1,3 +1,12 @@
+# Website
+https://user-images.githubusercontent.com/91191428/193604046-923fc6fb-97e1-418b-9f52-13c79e0299ae.mp4
+
+### To make it work ###
+- npm start on frontend terminal
+- npm start on backend terminal
+- Open http://localhost:4200/sauces
+- And my MongoDB database password
+
 ### Short story ###
 The first version is a “sauces gallery” allowing users to upload their favorite hot sauces and like or dislike sauces that others share. The front-end of the application was developed using Angular and was precompiled after internal testing, and we developed the back-end to build the API, while paying attention to the requirements for security (all user passwords collected by the application are protected).
 
