@@ -28,7 +28,7 @@ All sauce routes for sauces have an authorization (the token is sent by the fron
 - Delete a sauce
 - See all sauces
 
-### Security requirements ###
+# Security requirements 
 
 ● The user's password is hashed.
 
