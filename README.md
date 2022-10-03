@@ -7,21 +7,23 @@ Errors are returned as they are produced, without modification or addition.
 ### Routes API ###
 All sauce routes for sauces have an authorization (the token is sent by the front-end with the authorization header: "Bearer <token>"). Before the user can make any changes to the sauce route, the code is checked to see if the current userId matches the sauce's userId. If the userId does not does not match, we have “403: unauthorized request. » This ensures that only the owner of the sauce can make changes to it.
 
-### The following elements for the user ###
+# Steps
+
+### Step 1 The following elements for the user ###
 - User model,
 - User journey;
 - User controller.
   
-### The user is able to perform the following operations: ###
+### Step 2 The user is able to perform the following operations: ###
 - Create an account ;
 - Connect and have a valid token.
   
-### For the route API sauce ###
+### Step 3 For the route API sauce ###
 - The Sauce Model;
 - The Sauce Route;
 - The Sauce Controller.
   
-### The user is able to perform the following operations: ###
+### Step 4 The user is able to perform the following operations: ###
 - Add new sauce;
 - Delete a sauce;
 - See all sauces.
