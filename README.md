@@ -10,23 +10,23 @@ All sauce routes for sauces have an authorization (the token is sent by the fron
 # Steps
 
 ### Step 1 The following elements for the user ###
-- User model,
-- User journey;
-- User controller.
+- User model
+- User journey
+- User controller
   
-### Step 2 The user is able to perform the following operations: ###
-- Create an account ;
-- Connect and have a valid token.
+### Step 2 The user is able to perform the following operations ###
+- Create an account 
+- Connect and have a valid token
   
 ### Step 3 For the route API sauce ###
-- The Sauce Model;
-- The Sauce Route;
-- The Sauce Controller.
+- The Sauce Model
+- The Sauce Route
+- The Sauce Controller
   
-### Step 4 The user is able to perform the following operations: ###
-- Add new sauce;
-- Delete a sauce;
-- See all sauces.
+### Step 4 The user is able to perform the following operations ###
+- Add new sauce
+- Delete a sauce
+- See all sauces
 
 ### Security requirements ###
 
